@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS & JS/style.css">
+        <link rel="icon" href="/Images/UnoPlus_Logo.png">
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <div class="signup_container" id="signup_container">
+            <div class="form_container animate" id="form_container">
+            <form action="" class="signup_form" method="post">
+                <h1>Sign Up</h1>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form_group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form_group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password"
+                        placeholder="Confirm your password" required>
+                </div>
+                <div class="form_group">
+                    <label>Gender</label>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <p id="match-message" class="match-message">
+                    
+                </p>
+                <button type="submit" class="login_btn">Sign Up</button>
+                <button type="button" class="go_back" onclick="history.back()">Go Back</button>
+                <a href="log-in.html" class="already">alraedy have an acoount</a>
+            </form>
+        </div>
+        <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+    </div>
+
+<script src="/CSS & JS/script.js"></script>
+</body>
+</html>

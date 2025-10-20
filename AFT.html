@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="AFT_White.ico">
+    <link rel="stylesheet" href="/CSS & JS/style.css">
+    <title>Amazing Fast Team</title>
+    <script src="/CSS & JS/AFT.js">
+
+    </script>
+</head>
+
+<body class="body">
+    <header class="header" id="home">
+        <i id="aft-menu-icon" class="fa-solid fa-bars"></i>
+        <nav class="nav_g" id="nav_g">
+            <ul>
+                <li class="non-mobile"><a href="#home"><i class="fa-solid fa-house"></i>&nbsp;HOME</a></li>
+                <li class="non-mobile"><a href="#ABOUT"><i class="fa-solid fa-user-group"></i>&nbsp;ABOUT</a></li>
+                <li class="non-mobile"><a href="#GAME"><i class="fa-solid fa-gamepad"></i>&nbsp;GAME</a></li>
+                <li class="non-mobile"><a href="#CONTACT"><i class="fa-solid fa-envelope"></i>&nbsp;CONTACT</a></li>
+            </ul>
+            <a href="" id="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </nav>
+        <div class=" hero">
+            <h1>welcome to <span class="non-mobile">amazing Fast Team</span><span class="mobile">AFT</span></h1>
+        </div>
+    </header>
+
+    <section class="ABOUT section" id="ABOUT">
+
+        <figure class=" margin-top-64 figure">
+            <h2><i class="fa-solid fa-user-group"></i>&nbsp;ABOUT US</h2>
+            <figcaption><em>We are an ambitious team</em></figcaption>
+            <p class="justify">&emsp;&emsp;A passionate young game developer embracing the creative freedom of 2.5D
+                development. Our mission is to craft immersive and innovative gaming experiences that captivate players
+                and
+                push the boundaries of storytelling, gameplay, and design. Inspired by a deep love for games and the
+                limitless possibilities of the medium, we aim to bring fresh, vibrant, and dynamic worlds to life.
+                Driven by
+                curiosity and creativity, we believe in games that connect, inspire, and challenge. Every project is a
+                journey, and we’re excited to have you join us in shaping the future of gaming.</p>
+        </figure>
+
+        <figure class=" figure team figure">
+            <div class=" margin-right-32">
+                <h3><i class="fa-solid fa-user-group"></i>Amazing Fast Team</h3>
+                <img src="/Images/team.png" alt="team">
+            </div>
+            <figcaption class="justify">
+                &emsp;&emsp;Our team is our greatest strength. We are a collective of designers, programmers, and
+                artists
+                united by a shared passion for gaming. We thrive in a fast-paced, collaborative environment, blending
+                our
+                diverse skills to tackle creative challenges and build high-quality experiences efficiently. Every
+                member
+                brings a unique spark, driving us to innovate and support each other from the first concept to the final
+                launch.
+            </figcaption>
+        </figure>
+
+
+        <div class=" skills margin-top-64 div">
+            <h3>We are really good at</h3>
+            <div style="margin-bottom: 15px;">
+                <h4><i class="fa-solid fa-laptop"></i>&nbsp;Game Program</h4>
+                <div class="bar div">
+                    <div style="width: 85%;"><span>85%</span></div>
+                </div>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <h4><i class="fa-solid fa-object-group"></i>&nbsp;Game Design</h4>
+                <div class=" bar">
+                    <div style="width: 95%;"><span>95%</span></div>
+                </div>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <h4><i class="fa-solid fa-book"></i>&nbsp;Game Story</h4>
+                <div class="bar div">
+                    <div style="width: 90%;"><span>90%</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" overview">
+            <div>
+                <p><span>5+</span><br>Partners</p>
+            </div>
+            <div>
+                <p><span>12+</span><br>Projects Done</p>
+            </div>
+            <div>
+                <p><span>1000+</span><br>Happy Clients</p>
+            </div>
+            <div>
+                <p><span>60+</span><br>Meetings</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="GAME section" id="GAME">
+        <div class=" hero">
+            <h1><i class="fa-solid fa-gamepad"></i>&nbsp;OUR GAMES</h1>
+        </div>
+        <div class=" margin-top-64">
+            <h2>OUR PROJECTS</h2>
+            <p><i>Here are some of our latest projects
+                    <br>Click on the images to make them bigger</i></p>
+        </div>
+
+        <div class="gallary">
+            <img src="/Images/game1.png" onclick="maxImage(this)" alt="Little Nightmare 2">
+            <img src="/Images/game2.png" onclick="maxImage(this)" alt="Resident Evil Village">
+            <img src="/Images/game3.png" onclick="maxImage(this)" alt="The Outlist Trial">
+            <img src="/Images/game4.png" onclick="maxImage(this)" alt="A Plague Tale: Requiem">
+            <img src="/Images/game5.png" onclick="maxImage(this)" alt="Man Of War">
+            <img src="/Images/game6.png" onclick="maxImage(this)" alt="Visage pyschological horror">
+            <img src="/Images/game7.png" onclick="maxImage(this)" alt="Inside">
+            <img src="/Images/game8.png" onclick="maxImage(this)" alt="The Evil Within 2">
+        </div>
+        <button hidden>LOAD MORE</button>
+        <div id="max_image" style="display:none">
+            <button onclick="closeImage()"><i class="fa-solid fa-xmark"></i></button>
+            <img src="game1.png" alt="sss">
+            <p>Test</p>
+        </div>
+    </section>
+
+    <section class="CONTACT section" id="CONTACT">
+        <div class="hero">
+            <h1><i class="fa-solid fa-envelope"></i>&nbsp;CONTACT US</h1>
+        </div>
+
+        <div class=" margin-top-64">
+            <h2>WHERE IS OUR STUDIO?</h2>
+            <P><em>We'd love your feedback!</em></P>
+        </div>
+        <figure class="location">
+            <div class="map">
+                <img src="/Images/QAU.png" alt="map">
+            </div>
+            <div>
+                <figcaption><i class="icon-hover fa-solid fa-location-dot"></i> Sana'a, Yemen</figcaption>
+                <figcaption><i class="icon-hover fa-solid fa-phone"></i> Phone: +967-776186698</figcaption>
+                <figcaption><i class="icon-hover fa-solid fa-at"></i> Email: amazingfast.network@gmail.com</figcaption>
+            </div>
+        </figure>
+        <div class="form">
+            <form action="" method="post">
+                <input type="text" placeholder="Name" class="input">
+                <input type="email" placeholder="Email" class="input">
+                <textarea name="Message" id="Message" placeholder="Message" rows="5"></textarea>
+                <button type="submit" class="button"><i class="fa-solid fa-paper-plane"></i>&nbsp;SEND</button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer margin-top-64">
+        <div class="social-icon">
+            <li><a href="" class="whatsup"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="" class="snapshat"><i class="fa-brands fa-snapchat"></i></a></li>
+            <li><a href="" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="" class="pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+            <li><a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+        </div>
+        <p>All Copyright 2025 &copy; Designed by Moath Al-Shahari</p>
+    </footer>
+    <script src="AFT.js"></script>
+</body>
+</html>
