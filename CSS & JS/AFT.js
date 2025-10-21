@@ -1,19 +1,26 @@
+const menuIcon = document.querySelector('#aft-menu-icon');
+
 window.onscroll = function () {
     const navbar = document.getElementsByTagName("nav")[0];
     const links = navbar.getElementsByTagName("a");
-    const  bar = this.document.getElementById("aft-menu-icon");
+    const bar = this.document.getElementById("aft-menu-icon");
+
+    if (!navbar || !bar) 
+        return;
+
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
         navbar.style.backgroundColor = "var(--textcolor)";
-        bar.style.color="#000";
+        bar.style.color="var(--AFTColor)";
         for(let link of links)
             link.style.color = " var(--AFTColor)";
-           navbar.className = "animate-top";
+           navbar.classList.add = "animate-top";
     }
     else{
         navbar.style.backgroundColor = " var(--AFTColor)";
+        bar.style.color="var(--textcolor)"
         for(let link of links)
             link.style.color = "var(--textcolor)";
-        navbar.className = "";
+        navbar.classList.remove = "animate-top";
     }
 }
 
@@ -25,20 +32,22 @@ function maxImage(obj){
     image.alt = obj.alt;
     image.className = "animate-image";
     max_image.getElementsByTagName("p")[0].innerHTML = obj.alt;
-}
 
-if (maxImage)
-    document.getElementById("nav_g").style.zIndex = "0";
+    
+    if (menuIcon)
+        menuIcon.style.display = "none";
+}
 
 function closeImage() {
     
     document.getElementById("max_image").style.display = "none";
     document.querySelectorAll("#max_image img")[0].className = "";
+    if (menuIcon)
+        menuIcon.style.display = "block";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     // Select the menu icon and navbar
-    const menuIcon = document.querySelector('#aft-menu-icon');
     const navbar = document.querySelector('.nav_g');
 
     // Check if the elements exist
@@ -47,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuIcon.addEventListener('click', () => {
             // Toggle classes for the menu icon and navbar
             menuIcon.classList.toggle('fa-times'); // Change to "X" icon when active
+            menuIcon.classList.toggle('fa-bars'); //  Change to "bar" icon when active  
             navbar.classList.toggle('active');    // Show or hide the menu
         });
   } 

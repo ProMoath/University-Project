@@ -883,8 +883,9 @@ pre{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    
+    position: sticky;
 }
+
 #nav_g{
     background-color:rgba(43, 43, 43, 0.8);
     position:fixed;
@@ -941,7 +942,9 @@ nav li:hover,#search:hover{
     padding: 15px 25px;
     display: inline;
 }
-
+.mobile{
+    display: none;
+}
 
 /*section texts*/
  section div,section figure{
@@ -1240,7 +1243,7 @@ nav li:hover,#search:hover{
 }
 
 /* Responsive Style */
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 995px){
     .mobile{
         display: contents;
     }
@@ -1254,6 +1257,8 @@ nav li:hover,#search:hover{
         #aft-menu-icon {
             display: block;
             z-index: 999;
+            position: fixed;
+            top: -2px;
         }
     
         .nav_g {
