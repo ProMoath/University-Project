@@ -3,29 +3,29 @@ const menuIcon = document.querySelector('#aft-menu-icon');
 window.onscroll = function () {
     const navbar = document.getElementsByTagName("nav")[0];
     const links = navbar.getElementsByTagName("a");
-    const bar =document.getElementById("aft-menu-icon");
+    const bar = document.getElementById("aft-menu-icon");
 
-    if (!navbar || !bar) 
+    if (!navbar || !bar)
         return;
 
-    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.style.backgroundColor = "var(--textcolor)";
-        bar.style.color="var(--AFTColor)";
-        for(let link of links)
+        bar.style.color = "var(--AFTColor)";
+        for (let link of links)
             link.style.color = " var(--AFTColor)";
-            //navbar.className="animate-top"
-           navbar.classList.add ("animate-top");
+        //navbar.className="animate-top"
+        navbar.classList.add("animate-top");
     }
-    else{
+    else {
         navbar.style.backgroundColor = " var(--AFTColor)";
-        bar.style.color="var(--textcolor)"
-        for(let link of links)
-           {link.style.color = "var(--textcolor)";
+        bar.style.color = "var(--textcolor)"
+        for (let link of links) {
+            link.style.color = "var(--textcolor)";
             //navbar.className=""
-            navbar.classList.remove ("animate-top");
+            navbar.classList.remove("animate-top");
+        }
     }
 }
-
 function maxImage(obj){
     const max_image = document.getElementById("max_image");
     const image = max_image.getElementsByTagName("img")[0];
